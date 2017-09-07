@@ -1,0 +1,86 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+.clearfix:before,
+	.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+visibility:hidden;
+    line-height: 0;
+    height: 0;
+    font-size:0;
+}
+
+.clearfix { *zoom:1;}
+
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+
+
+.header{
+	width: 100%;
+	background-color: #2b2e33;
+}
+.top_on{
+	width: 1200px;
+	margin: 0 auto;
+}
+.top_on>a:nth-child(2)>img{
+	float: left;
+	margin-left: 424px;
+	padding-top: 15px;
+	padding-bottom: 14px;
+}
+.top_on .denglu{
+	float: right;
+	margin-right: 38px;
+	line-height: 90px;
+	font-size: 14px;
+	color: #686c71;
+	width: 244px;
+}
+.top_on>a:nth-child(1){
+	margin-left: 56px;
+	padding-top: 33px;
+	float: left;
+}
+.top_on>a:nth-child(1)>img{
+	display: block;
+}
+.denglu>a{
+	color: #686c71;
+}
+.denglu>a:hover{
+	color: #ffd801;
+}
+.denglu img{
+	float: left;
+	margin-top: 27px;
+}
+.denglu img:nth-child(1){
+	margin-right: 68px;
+}
+.denglu img:nth-child(2){
+	margin-right: 44px;
+}
