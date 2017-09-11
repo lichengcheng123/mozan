@@ -1,12 +1,19 @@
 import React, { Component } from 'react'
-import './footer.css'    
+import './footer.css'
 import Logo from './images/taobaoma_14.jpg'
 import Logo1 from './images/taobao_21.jpg'
 import Logo2 from './images/weixinma_14.jpg'
 import Logo3 from './images/weixin_21.jpg'
 import Logo4 from './images/logo_03.png'
-
-
+import gouwu from './gouwu.svg'
+import zhifu from './zhifu.svg'
+import peisong from './peisong.svg'
+import shouhou from './shouhou.svg'
+import fuwu from './fuwu.svg'
+import guanyu from './guanyu.svg'
+import mianze from './mianze.svg'
+import youqing from './youqing.svg'
+import dianhua from './dianhua.svg'
 
 class Footer extends Component {
   render () {
@@ -18,37 +25,37 @@ class Footer extends Component {
               <h1>帮助信息</h1>
               <ul>
                 <li>
-                  <i className="iconfont">&#xe65d;</i>
+                  <img src={gouwu} alt={gouwu}/>
                   <a href="#">购物指南</a>
                 </li>
                 <li>
-                  <i className="iconfont">&#xe633;</i>
+                  <img src={zhifu} alt={zhifu}/>
                   <a href="#">支付方式</a>
                 </li>
                 <li>
-                  <i className="iconfont">&#xe636;</i>
+                  <img src={peisong} alt={peisong}/>
                   <a href="#">配送方式</a>
                 </li>
                 <li>
-                  <i className="iconfont">&#xe51a;</i>
+                  <img src={shouhou} alt={shouhou}/>
                   <a href="#">售后服务</a>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <i className="iconfont">&#xe603;</i>
+                  <img src={fuwu} alt={fuwu}/>
                   <a href="#">服务中心</a>
                 </li>
                 <li>
-                  <i className="iconfont">&#xe643;</i>
+                  <img src={guanyu} alt={guanyu}/>
                   <a href="#">关于我们</a>
                 </li>
                 <li>
-                  <i className="iconfont">&#xe66a;</i>
+                  <img src={mianze} alt={mianze}/>
                   <a href="#">免责条款</a>
                 </li>
                 <li>
-                  <i className="iconfont">&#xe62d;</i>
+                  <img src={youqing} alt={youqing}/>
                   <a href="#">友情链接</a>
                 </li>
               </ul>
@@ -67,7 +74,7 @@ class Footer extends Component {
             <div className="footer_rigth">
               <h1>客服热线</h1>
               <b>
-                <i className="iconfont">&#xe603;</i>
+                <img src={dianhua} alt={dianhua}/>
                 400 113 5353<br></br>
                 <span>[ 周一至周五 9:00-18:00 ]</span>
               </b>

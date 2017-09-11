@@ -6,6 +6,9 @@ import Logo2 from './images/weixin_05.jpg'
 import Logo3 from './images/weixinm_03.jpg'
 import Logo4 from './images/weixinshouji_03.jpg'
 import Logo5 from './images/xiuchengzhengguo_03.jpg'
+import fangshi from './fangshi.svg'
+import fangwei from './fangwei.svg'
+
 class Money extends Component {
   render () {
     return (
@@ -26,9 +29,9 @@ class Money extends Component {
       </div>
       <div className="dingdan clearfix">
         <span>订单号：12345678912345</span>
-        <span><i className="iconfont">&#xe652;</i>186****0734</span>
-        <span><i className="iconfont">&#xe601;</i>迪力木拉提</span><br></br><br></br>
-        <span><i className="iconfont">&#xe648;</i>新疆维吾尔族自治区伊犁哈萨克自治州奎屯市乌鲁木齐西路56圆71栋1单元1103号</span>
+        <span><img src={fangshi} alt={fangshi}/>186****0734</span>
+        <span><img src={fangwei} alt={fangwei}/>迪力木拉提</span><br></br><br></br>
+        <span><img src={fangshi} alt={fangshi}/>新疆维吾尔族自治区伊犁哈萨克自治州奎屯市乌鲁木齐西路56圆71栋1单元1103号</span>
       </div>
       <div className="zhifufangshi clearfix">
         <span>选择支付方式</span>

@@ -4,9 +4,13 @@ import Logo from './images/men_08.jpg'
 import Logo1 from './images/logo_03.png'
 import Logo2 from './images/fsangdajing_03.jpg'
 import Logo3 from './images/shop_03.jpg'
+import Enniu from '../../enniu/Enniu'
 
 class Header extends Component {
+
+
   render () {
+
     return (
         <div className="header">
           <div className="top_on clearfix">
@@ -15,12 +19,18 @@ class Header extends Component {
             <div className="denglu">
               <img src={Logo2} alt="Logo"/>
               <img src={Logo3} alt="Logo"/>
-              <a href="#">登录 </a>/
-              <a href="#">注册</a>
+
+
             </div>
           </div>
+          <div className='deng'>
 
+            <Enniu/>
+
+
+          </div>
         </div>
+
     )
   }
 }

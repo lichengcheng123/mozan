@@ -7,10 +7,11 @@ class App extends Component {
   render () {
     return (
       <div className='app'>
-        
+
         <Layout>
           <Main />
         </Layout>
+
       </div>
     )
   }

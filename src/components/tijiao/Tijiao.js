@@ -4,7 +4,9 @@ import Logo from './images/xiaoduihao_11.jpg'
 import Logo1 from './images/dingdanren_15.jpg'
 import Logo2 from './images/yushou_03.png'
 import Logo3 from './images/xiaoduihao_11.jpg'
-
+import dianhua from './dianhua.svg'
+import fangshi from './fangshi.svg'
+import fangwei from './fangwei.svg'
 
 class Tijiao extends Component {
   render () {
@@ -25,12 +27,12 @@ class Tijiao extends Component {
             <li>
               <div className="map clearfix">
                 <span>
-									<i className="iconfont">&#xe601;</i>阿不来提·阿卜杜热西提</span>
+                  <img src={fangshi} alt="fangshi"/>阿不来提·阿卜杜热西提</span>
                 <span>
-									<i className="iconfont">&#xe648;</i>
+									<img src={fangwei} alt="fangwei"/>
                 新疆维吾尔自治区波尔塔拉蒙古自治州塔格特90团乎热郭木村9连5区13号</span>
                 <span>
-									<i className="iconfont">&#xe652;</i>
+                  <img src={dianhua} alt="dianhua"/>
                 186****5149</span>
               </div>
               <a className="clearr" href="javascript:void(0);"><i className="iconfont">&#xe6b2;</i>删除</a>
@@ -45,7 +47,67 @@ class Tijiao extends Component {
             <li>
               <div className="map clearfix">
                 <span>
-                  <i className="iconfont">&#xe601;</i>阿不来提·阿卜杜热西提</span>
+                  <img src={fangshi} alt="fangshi"/>阿不来提·阿卜杜热西提</span>
+                <span>
+                  <img src={fangwei} alt="fangwei"/>
+                新疆维吾尔自治区波尔塔拉蒙古自治州塔格特90团乎热郭木村9连5区13号</span>
+                <span>
+                  <img src={dianhua} alt="dianhua"/>
+                186****5149</span>
+              </div>
+              <a className="clearr" href="javascript:void(0);"><i className="iconfont">&#xe6b2;</i>删除</a>
+              <a href="javascript:void(0);"><i className="iconfont">&#xe616;</i>编辑</a>
+              <a className="morenn" href="javascript:void(0);">设为默认</a>
+              <img className="xiaoduigou" src={Logo} alt="Logo" />
+              <div className="clear clearfix">
+                <a className="clearc" href="javascript:void(0);">不删除</a>
+                <a className="clearcc" href="javascript:void(0);">确定删除</a>
+              </div>
+            </li>
+            <li>
+              <div className="map clearfix">
+                <span>
+                  <img src={fangshi} alt="fangshi"/> 阿不来提·阿卜杜热西提</span>
+                <span>
+                  <img src={fangwei} alt="fangwei"/>
+                新疆维吾尔自治区波尔塔拉蒙古自治州塔格特90团乎热郭木村9连5区13号</span>
+                <span>
+                  <img src={dianhua} alt="dianhua"/>
+                186****5149</span>
+              </div>
+              <a className="clearr" href="javascript:void(0);"><i className="iconfont">&#xe6b2;</i>删除</a>
+              <a href="javascript:void(0);"><i className="iconfont">&#xe616;</i>编辑</a>
+              <a className="morenn" href="javascript:void(0);">设为默认</a>
+              <img className="xiaoduigou" src={Logo} alt="Logo" />
+              <div className="clear clearfix">
+                <a className="clearc" href="javascript:void(0);">不删除</a>
+                <a className="clearcc" href="javascript:void(0);">确定删除</a>
+              </div>
+            </li>
+            <li>
+              <div className="map clearfix">
+                <span>
+                  <img src={fangshi} alt="fangshi"/>阿不来提·阿卜杜热西提</span>
+                <span>
+                  <img src={fangwei} alt="fangwei"/>
+                新疆维吾尔自治区波尔塔拉蒙古自治州塔格特90团乎热郭木村9连5区13号</span>
+                <span>
+                  <img src={dianhua} alt="dianhua"/>
+                186****5149</span>
+              </div>
+              <a className="clearr" href="javascript:void(0);"><i className="iconfont">&#xe6b2;</i>删除</a>
+              <a href="javascript:void(0);"><i className="iconfont">&#xe616;</i>编辑</a>
+              <a className="morenn" href="javascript:void(0);">设为默认</a>
+              <img className="xiaoduigou" src={Logo} alt="Logo" />
+              <div className="clear clearfix">
+                <a className="clearc" href="javascript:void(0);">不删除</a>
+                <a className="clearcc" href="javascript:void(0);">确定删除</a>
+              </div>
+            </li>
+            <li>
+              <div className="map clearfix">
+                <span>
+                  <img src="" alt=""/>  阿不来提·阿卜杜热西提</span>
                 <span>
                   <i className="iconfont">&#xe648;</i>
                 新疆维吾尔自治区波尔塔拉蒙古自治州塔格特90团乎热郭木村9连5区13号</span>
@@ -65,67 +127,7 @@ class Tijiao extends Component {
             <li>
               <div className="map clearfix">
                 <span>
-                  <i className="iconfont">&#xe601;</i>阿不来提·阿卜杜热西提</span>
-                <span>
-                  <i className="iconfont">&#xe648;</i>
-                新疆维吾尔自治区波尔塔拉蒙古自治州塔格特90团乎热郭木村9连5区13号</span>
-                <span>
-                  <i className="iconfont">&#xe652;</i>
-                186****5149</span>
-              </div>
-              <a className="clearr" href="javascript:void(0);"><i className="iconfont">&#xe6b2;</i>删除</a>
-              <a href="javascript:void(0);"><i className="iconfont">&#xe616;</i>编辑</a>
-              <a className="morenn" href="javascript:void(0);">设为默认</a>
-              <img className="xiaoduigou" src={Logo} alt="Logo" />
-              <div className="clear clearfix">
-                <a className="clearc" href="javascript:void(0);">不删除</a>
-                <a className="clearcc" href="javascript:void(0);">确定删除</a>
-              </div>
-            </li>
-            <li>
-              <div className="map clearfix">
-                <span>
-                  <i className="iconfont">&#xe601;</i>阿不来提·阿卜杜热西提</span>
-                <span>
-                  <i className="iconfont">&#xe648;</i>
-                新疆维吾尔自治区波尔塔拉蒙古自治州塔格特90团乎热郭木村9连5区13号</span>
-                <span>
-                  <i className="iconfont">&#xe652;</i>
-                186****5149</span>
-              </div>
-              <a className="clearr" href="javascript:void(0);"><i className="iconfont">&#xe6b2;</i>删除</a>
-              <a href="javascript:void(0);"><i className="iconfont">&#xe616;</i>编辑</a>
-              <a className="morenn" href="javascript:void(0);">设为默认</a>
-              <img className="xiaoduigou" src={Logo} alt="Logo" />
-              <div className="clear clearfix">
-                <a className="clearc" href="javascript:void(0);">不删除</a>
-                <a className="clearcc" href="javascript:void(0);">确定删除</a>
-              </div>
-            </li>
-            <li>
-              <div className="map clearfix">
-                <span>
-                  <i className="iconfont">&#xe601;</i>阿不来提·阿卜杜热西提</span>
-                <span>
-                  <i className="iconfont">&#xe648;</i>
-                新疆维吾尔自治区波尔塔拉蒙古自治州塔格特90团乎热郭木村9连5区13号</span>
-                <span>
-                  <i className="iconfont">&#xe652;</i>
-                186****5149</span>
-              </div>
-              <a className="clearr" href="javascript:void(0);"><i className="iconfont">&#xe6b2;</i>删除</a>
-              <a href="javascript:void(0);"><i className="iconfont">&#xe616;</i>编辑</a>
-              <a className="morenn" href="javascript:void(0);">设为默认</a>
-              <img className="xiaoduigou" src={Logo} alt="Logo" />
-              <div className="clear clearfix">
-                <a className="clearc" href="javascript:void(0);">不删除</a>
-                <a className="clearcc" href="javascript:void(0);">确定删除</a>
-              </div>
-            </li>
-            <li>
-              <div className="map clearfix">
-                <span>
-                  <i className="iconfont">&#xe601;</i>阿不来提·阿卜杜热西提</span>
+                  <img src="" alt=""/>阿不来提·阿卜杜热西提</span>
                 <span>
                   <i className="iconfont">&#xe648;</i>
                 新疆维吾尔自治区波尔塔拉蒙古自治州塔格特90团乎热郭木村9连5区13号</span>

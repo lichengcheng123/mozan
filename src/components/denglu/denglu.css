@@ -1,0 +1,21 @@
+
+
+.header-main {
+  flex-grow: 1;
+}
+.header-login-button {
+  color: gray;
+  cursor: pointer;
+}
+
+.logout-str {
+  color: gray;
+}
+
+.logout-button {
+  cursor: pointer;
+}
+a{
+  color: #686c71;
+
+}

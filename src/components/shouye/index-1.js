@@ -6,24 +6,93 @@ import Logo2 from './images/3.jpg'
 import Logo3 from './images/yushou_03.png'
 import Logo4 from './images/ditu_07.jpg'
 import Logo5 from './images/bichu_07.jpg'
-
+import Contdown from '../contdown/Contdown'
 
 class Main extends Component {
-  state = {
-    count:0
+  state ={
+    count:0,
+  activeIndex: 0,
+  activeIndex2: 0,
+  sizes: [
+    {
+      size: 'S'
+    },
+    {
+      size: 'M'
+    },
+    {
+      size: 'L'
+    },
+    {
+      size: 'XL'
+    },
+    {
+      size: 'XS'
+    },
+    {
+      size: 'XXS'
+    }
+  ],
+  names: [
+    {
+      name: 'iphone:5'
+    },
+    {
+      name:'iphone:6'
+    },
+    {
+      name:'iphone:6+'
+    }
+  ]
   }
-  handleClick=()=>{
+
+
+
+
+handleClick2= (i) => {
+  console.log(i)
+  this.setState({
+    activeIndex: i
+  })
+}
+handleClick3= (i) => {
+  console.log(i)
+  this.setState({
+    activeIndex2: i
+  })
+}
+
+
+  handleClick=(event)=>{
+    event.preventDefault()
     this.setState({
       count:this.state.count + 1
     })
   }
-  handleClick1=()=>{
+  handleClick1=(event)=>{
+    event.preventDefault()
     this.setState({
       count:this.state.count - 1
     })
   }
+
+
+
   render () {
-    return (
+
+    const list = this.state.sizes.map((t, i) => (
+    <div onClick={() => this.handleClick2(i)}
+      className={`size ${this.state.activeIndex===i&& 'active'}`}
+      key={i}>{t.size}</div>
+    ))
+
+    const list1 = this.state.names.map((t, i) => (
+    <div onClick={() => this.handleClick3(i)}
+      className={`name ${this.state.activeIndex2===i&& 'active'}`}
+      key={i}>{t.name}</div>
+    ))
+
+  return (
     <div className="main">
       <div className="wrap">
         <div className="swiper-container">
@@ -44,10 +113,9 @@ class Main extends Component {
           <div className="daojishi">
             <span>距离预售结束</span>
             <div className="jishi">
-              <span><span className="day">00</span> </span>:
-              <span><span className="hour">15</span> </span>:
-              <span><span className="minutes">35</span> </span>:
-              <span><span className="seconds">55</span> </span>
+              <span>
+                <Contdown/>
+              </span>
               <i>天</i>
               <i>时</i>
               <i>分</i>
@@ -65,25 +133,23 @@ class Main extends Component {
           </div>
           <div className="kuanshi clearfix">
             <span>款式</span>
-            <a href="#">iphone 5</a>
-            <a href="#">iphone 6</a>
-            <a href="#">iphone 6+</a>
+
+            <div className="a">
+              {list1}
+            </div>
+
           </div>
           <div className="chima clearfix">
             <span>尺码</span>
-            <a href="#">XXS</a>
-            <a href="#">XS</a>
-            <a href="#">S</a>
-            <a href="#">M</a>
-            <a href="#">L</a>
-            <a href="#">XL</a>
-            <a href="#">XXL</a>
+            <div className='c'>
+              {list}
+            </div>
           </div>
           <div className="shuliang clearfix">
             <span>数量</span>
-            <div className="jian" href="#" onclick={this.handleClick}>-</div>
+            <a className="jian" href="#" onClick={this.handleClick1}>-</a>
             <span className="shu">{this.state.count}</span>
-            <div className="jia" href="#" onclick={this.handleClick1}>+</div>
+            <a className="jia" href="#" onClick={this.handleClick}>+</a>
           </div>
         </article>
         <div className="anniu">

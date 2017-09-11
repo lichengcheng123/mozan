@@ -1,12 +1,13 @@
 
 .main{
 	background: url("./images/warp_18.jpg");
+
 }
 .wrap{
 	width: 1200px;
 	margin: 0 auto;
 	background: url("./images/banner_14.jpg");
-	position: relative;
+
 }
 .swiper-button-prev{
 	position: absolute;
@@ -66,13 +67,13 @@ aside .daojishi .jishi{
 	padding: 0 22px;
 	color: #fdd900
 }
-aside .daojishi .jishi>span{
+aside .daojishi .jishi>span>div{
 	font-weight: bold;
 	padding: 0 13px
 }
 aside .daojishi .jishi>i{
 	font-style: normal;
-	padding: 0 40px;
+	padding: 0 35px;
 	font-size: 12px;
 	display: block;
 	float: left;
@@ -115,7 +116,7 @@ article>div>span:nth-child(1){
 	line-height: 18px;
 	padding-left: 94px;
 }
-.kuanshi a,.chima a,.shuliang a{
+.kuanshi div,.chima div,.shuliang a{
 	width: 79px;
 	line-height: 26px;
 	font-size: 14px;
@@ -125,7 +126,14 @@ article>div>span:nth-child(1){
 	border: 1px solid #fff;
 	text-align: center;
 	color: #fff;
+	cursor: pointer;
 }
+
+.chima .active{
+	border: 1px solid yellow;
+	color: yellow;
+}
+
 .chima{
 	width: 380px;
 	margin-bottom: 20px;
@@ -133,9 +141,23 @@ article>div>span:nth-child(1){
 .chima span{
 	margin-bottom: 20px
 }
-.chima a{
-	width: 64px;
+.kuanshi .active{
+	border: 1px solid yellow;
+	color: yellow;
+}
+.kuanshi .a{
+	width:270px;
 	margin-bottom: 5px;
+	border: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+.chima .c{
+	width:270px;
+	margin-bottom: 5px;
+	border: none;
+	display: flex;
+	flex-wrap: wrap
 }
 .shuliang a{
 	width: 69px;
