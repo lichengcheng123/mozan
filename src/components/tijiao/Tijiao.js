@@ -7,6 +7,7 @@ import Logo3 from './images/xiaoduihao_11.jpg'
 import dianhua from './dianhua.svg'
 import fangshi from './fangshi.svg'
 import fangwei from './fangwei.svg'
+import {Link} from 'react-router-dom'
 
 class Tijiao extends Component {
   render () {
@@ -226,7 +227,7 @@ class Tijiao extends Component {
         <span>=</span>
         <span>￥168.00</span>
       </div>
-      <a className="tijiaodingdan" href="shouyintai.html">提交订单</a>
+      <Link to = '/Money' className="tijiaodingdan">提交订单</Link>
     </div>
   </div>
   )

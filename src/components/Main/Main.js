@@ -5,16 +5,29 @@ import Cart from '../cart/Cart'
 import Cartd from '../cartd/Cartd'
 import Tijiao from '../tijiao/Tijiao'
 import Money from '../money/Money'
+import {
+  BrowserRouter as Router,
+  Route
+ } from 'react-router-dom'
+
 
 class Main extends Component {
   render () {
     return (
-  <div className="Main">
-    <shouye />
-  </div>
+      <Router>
+
+        <div className="Main">
+          <Route exact path='/' component={Shouye} />
+          <Route path='/cartd' component={Cartd} />
+          <Route path='/cart' component={Cart} />
+          <Route path='/tijiao' component={Tijiao} />
+          <Route path='/money' component={Money} />
+        </div>
+
+      </Router>
 
       )
   }
 }
 
-export default Shouye
+export default Main

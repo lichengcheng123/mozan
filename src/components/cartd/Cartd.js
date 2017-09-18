@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './cartd.css'
 import Logo from './images/jiarucheren_03.jpg'
 import Logo1 from './images/jiaruyaoshi_03.jpg'
-
+import {Link} from 'react-router-dom'
 
 
 
@@ -24,8 +24,8 @@ class Cartd extends Component {
             <span>尺码：XL</span>
             <span>数量：xl</span>
           </div>
-          <a href="gouwuche.html">去购物车结算</a>
-          <a href="index.html">返回</a>
+          <Link to='/Cart'>去购物车结算</Link>
+          <Link to='/'> 返回 </Link>
         </div>
         <div className="xiabian clearfix">
           <span>您可能还需要</span>

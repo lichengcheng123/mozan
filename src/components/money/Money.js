@@ -8,6 +8,7 @@ import Logo4 from './images/weixinshouji_03.jpg'
 import Logo5 from './images/xiuchengzhengguo_03.jpg'
 import fangshi from './fangshi.svg'
 import fangwei from './fangwei.svg'
+import {Link} from 'react-router-dom'
 
 class Money extends Component {
   render () {
@@ -41,7 +42,7 @@ class Money extends Component {
         <div><a className="weixin" href="#"><img src={Logo2} alt="Logo2"/>
           <img className="xiaoduigou" src={Logo1} alt="Logo1"/></a></div>
       </div>
-      <a className="fukuan" href="#">付款</a>
+      <Link to = '/' className="fukuan">付款</Link>
       <div className="wxfk clearfix">
         <h3>微信支付</h3>
         <div className="erweima">

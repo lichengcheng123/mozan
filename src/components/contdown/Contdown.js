@@ -60,6 +60,12 @@ class Contdown extends Component {
   componentDidMount = () => {
     window.setInterval(this.tick, 1000)
   }
+  // componentDidMount = () => {
+  //   this.trim=window.setInterval(this.tick, 1000)
+  // }
+  // componentDidUnmount  =() =>{
+  //   window.clearInterval(this.trim)
+  // }
 
   render () {
     const { date, hour, min, sec } = this.state

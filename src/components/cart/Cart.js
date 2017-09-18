@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './cart.css'
 import Logo from './images/gouwuren_07.jpg'
 import Logo1 from './images/gouwuchekong_03.jpg'
-
+import {Link} from 'react-router-dom'
 
 
 class Cart extends Component {
@@ -97,7 +97,7 @@ class Cart extends Component {
               <a className="clearcc" href="javascript:void(0);">确定删除</a>
             </div>
           </div>
-          <a className="qujiesuan" href="tijiaodingdan.html">去结算</a>
+          <Link to='/Tijiao' className='qujiesuan'>去结算 </Link>
         </div>
         <div className="wukong">
           <div className="section_on clearfix">
